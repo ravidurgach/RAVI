@@ -91,7 +91,7 @@ jobs:
     - name: Terraform Apply
       if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
-                  - name: Setup Node.js environment
+                  - name:Setup Node.js environment
   uses: actions/setup-node@v4.0.1
   with:
     # Set always-auth in npmrc.
